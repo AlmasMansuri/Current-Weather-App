@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+.container {
+  width: 400px; /*position in the center*/
+  height: min-content; /*sets height atleast for min  content**/
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.form {
+  width: 100%; /*takes whole width*/
+  height: min-content;
+  display: flex;
+  justify-content: space-between; /*space between place button and input same level*/
+  align-items: center;
+}
+
+.input {
+  width: 90%;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #000; /*gives color to the text*/
+  background-color: #e6f5fb; /*gives background color to the input field*/
+  padding: 12px 16px; /*padding:top/bottom left/right*/
+
+  border-radius: 12px;
+}
+
+.input::placeholder {
+  color: #000; /*placeholder text color*/
+}
+
+.btn {
+  /* width: 46px;*/
+  height: 46px;
+  padding: 10px 16px;
+  margin-left: 25px;
+  font-size: 20px;
+  background-color: #e6f5fb;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #ababab;
+}
+.weather-img {
+  width: 60%;
+}
+
+.weather-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 20px; /*margin-block used for top/bottom*/
+}
+
+.weather-content {
+  margin-block: 20px;
+  text-align: center;
+}
+
+.weather-content .temperature {
+  font-size: 40px;
+  font-weight: 800;
+  position: relative;
+}
+.weather-content .temperature sup {
+  font-size: 20px;
+  position: absolute; /*to make position absolute need to define relative like in line 84*/
+  font-weight: 600;
+}
+.weather-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.humidity {
+  margin-left: 20px;
+  font-size: 16px;
+}
+.windspeed {
+  margin-right: 20px;
+  font-size: 16px;
+}
